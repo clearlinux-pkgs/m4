@@ -4,7 +4,7 @@
 #
 Name     : m4
 Version  : 1.4.17
-Release  : 20
+Release  : 21
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.17.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.17.tar.xz
 Summary  : No detailed summary available
