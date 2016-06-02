@@ -4,7 +4,7 @@
 #
 Name     : m4
 Version  : 1.4.17
-Release  : 27
+Release  : 28
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.17.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.17.tar.xz
 Summary  : No detailed summary available
@@ -12,45 +12,6 @@ Group    : Development/Tools
 License  : FSFULLR GFDL-1.3 GPL-3.0 GPL-3.0+
 Requires: m4-bin
 Requires: m4-doc
-BuildRequires : autoconf
-BuildRequires : automake
-BuildRequires : automake-dev
-BuildRequires : binutils
-BuildRequires : bzip2
-BuildRequires : clr-rpm-config
-BuildRequires : coreutils
-BuildRequires : diffutils
-BuildRequires : gawk
-BuildRequires : gcc
-BuildRequires : gcc-dev
-BuildRequires : gettext
-BuildRequires : gettext-bin
-BuildRequires : git
-BuildRequires : glibc-utils
-BuildRequires : grep
-BuildRequires : gzip
-BuildRequires : hostname
-BuildRequires : libc6-dev
-BuildRequires : libc6-locale
-BuildRequires : libtool
-BuildRequires : libtool-dev
-BuildRequires : linux-libc-headers
-BuildRequires : make
-BuildRequires : netbase
-BuildRequires : nss-altfiles
-BuildRequires : patch
-BuildRequires : pigz
-BuildRequires : pkg-config
-BuildRequires : pkg-config-dev
-BuildRequires : rpm-build
-BuildRequires : sed
-BuildRequires : shadow
-BuildRequires : strace
-BuildRequires : systemd-libs
-BuildRequires : tar
-BuildRequires : unzip
-BuildRequires : which
-BuildRequires : xz
 Patch1: 0001-disable-update-copyright-if-perl-is-too-new.patch
 
 %description
