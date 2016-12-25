@@ -4,7 +4,7 @@
 #
 Name     : m4
 Version  : 1.4.17
-Release  : 30
+Release  : 31
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.17.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.17.tar.xz
 Summary  : No detailed summary available
@@ -43,6 +43,8 @@ doc components for the m4 package.
 %patch1 -p1
 
 %build
+export LANG=C
+export SOURCE_DATE_EPOCH=`date +%s -r configure`
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
