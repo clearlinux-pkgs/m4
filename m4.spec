@@ -6,9 +6,10 @@
 #
 Name     : m4
 Version  : 1.4.18
-Release  : 32
+Release  : 33
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
+Source99 : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : FSFULLR GFDL-1.3 GPL-3.0 GPL-3.0+
@@ -46,7 +47,7 @@ doc components for the m4 package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1483971764
+export SOURCE_DATE_EPOCH=1484269488
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
