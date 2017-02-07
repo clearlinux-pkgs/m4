@@ -6,7 +6,7 @@
 #
 Name     : m4
 Version  : 1.4.18
-Release  : 37
+Release  : 38
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source99 : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz.sig
@@ -47,7 +47,7 @@ doc components for the m4 package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1486400279
+export SOURCE_DATE_EPOCH=1486485046
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -59,7 +59,7 @@ export no_proxy=localhost
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1486400279
+export SOURCE_DATE_EPOCH=1486485046
 rm -rf %{buildroot}
 %make_install
 
