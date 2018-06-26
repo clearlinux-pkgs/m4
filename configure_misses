@@ -1,0 +1,14 @@
+Configure miss: fpurge
+Configure miss: __freadahead
+Configure miss: precise C stack overflow detection
+Configure miss: libsigsegv
+Configure miss: whether fflush works on input streams
+Configure miss: whether C symbols are prefixed with underscore at the linker level
+Configure miss: whether printf supports the 'n' directive
+Configure miss: whether to use C++
+Configure miss: whether fpurge is declared
+Configure miss: _fseeki64
+Configure miss: obstacks that work with any size object
+Configure miss: a turkish Unicode locale
+Configure miss: if changeword is wanted
+Configure miss: if malloc debugging is wanted
