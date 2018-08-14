@@ -6,7 +6,7 @@
 #
 Name     : m4
 Version  : 1.4.18
-Release  : 70
+Release  : 71
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source99 : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz.sig
@@ -16,7 +16,9 @@ License  : FSFULLR GPL-3.0 GPL-3.0+
 Requires: m4-bin
 Requires: m4-license
 Requires: m4-man
+BuildRequires : glibc-locale
 Patch1: 0001-disable-update-copyright-if-perl-is-too-new.patch
+Patch2: 0002-Fix-build-with-glibc-2.18.patch
 
 %description
 GNU `m4' is an implementation of the traditional Unix macro
@@ -64,13 +66,14 @@ man components for the m4 package.
 %prep
 %setup -q -n m4-1.4.18
 %patch1 -p1
+%patch2 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530145980
+export SOURCE_DATE_EPOCH=1534206225
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -82,7 +85,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1530145980
+export SOURCE_DATE_EPOCH=1534206225
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/m4
 cp COPYING %{buildroot}/usr/share/doc/m4/COPYING
