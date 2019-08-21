@@ -6,10 +6,10 @@
 #
 Name     : m4
 Version  : 1.4.18
-Release  : 88
+Release  : 89
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
-Source99 : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz.sig
+Source1 : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : FSFULLR GPL-3.0 GPL-3.0+
@@ -71,22 +71,25 @@ man components for the m4 package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1557418413
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1566412714
 export GCC_IGNORE_WERROR=1
-export LDFLAGS="${LDFLAGS} -fno-lto"
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1557418413
+export SOURCE_DATE_EPOCH=1566412714
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/m4
 cp COPYING %{buildroot}/usr/share/package-licenses/m4/COPYING

@@ -1,5 +1,4 @@
 # This file contains recursive sources that require this package
-Coin
 NetworkManager-openconnect
 PackageKit
 accountsservice
@@ -24,14 +23,17 @@ fontconfig
 gdk-pixbuf
 gdm
 gettext
+ghostscript
 gnome-themes-standard
 goaccess
 grub
 gtk+
 i3lock
 icecream
+imagescan
 libappindicator
 libev
+libgpg-error
 libindicator
 libsafec
 libvirt
@@ -45,6 +47,7 @@ numatop
 oath-toolkit
 open-vm-tools
 openconnect
+os-autoinst
 patch
 pixman
 polkit
@@ -52,10 +55,11 @@ pth
 python-rpm-legacypython
 qemu
 qemu-guest-additions
-qemu-lite
 rpm
 rrdtool
 rtkit
+ruby
+shadow
 sqlite-autoconf
 tar
 weechat
