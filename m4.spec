@@ -6,7 +6,7 @@
 #
 Name     : m4
 Version  : 1.4.18
-Release  : 92
+Release  : 93
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source1 : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz.sig
@@ -14,6 +14,7 @@ Summary  : No detailed summary available
 Group    : Development/Tools
 License  : FSFULLR GPL-3.0 GPL-3.0+
 Requires: m4-bin = %{version}-%{release}
+Requires: m4-info = %{version}-%{release}
 Requires: m4-license = %{version}-%{release}
 Requires: m4-man = %{version}-%{release}
 BuildRequires : glibc-locale
@@ -37,13 +38,12 @@ Requires: m4-license = %{version}-%{release}
 bin components for the m4 package.
 
 
-%package doc
-Summary: doc components for the m4 package.
-Group: Documentation
-Requires: m4-man = %{version}-%{release}
+%package info
+Summary: info components for the m4 package.
+Group: Default
 
-%description doc
-doc components for the m4 package.
+%description info
+info components for the m4 package.
 
 
 %package license
@@ -64,6 +64,7 @@ man components for the m4 package.
 
 %prep
 %setup -q -n m4-1.4.18
+cd %{_builddir}/m4-1.4.18
 %patch1 -p1
 %patch2 -p1
 
@@ -72,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566412714
+export SOURCE_DATE_EPOCH=1573772930
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -89,11 +90,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1566412714
+export SOURCE_DATE_EPOCH=1573772930
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/m4
-cp COPYING %{buildroot}/usr/share/package-licenses/m4/COPYING
-cp examples/COPYING %{buildroot}/usr/share/package-licenses/m4/examples_COPYING
+cp %{_builddir}/m4-1.4.18/COPYING %{buildroot}/usr/share/package-licenses/m4/8624bcdae55baeef00cd11d5dfcfa60f68710a02
+cp %{_builddir}/m4-1.4.18/examples/COPYING %{buildroot}/usr/share/package-licenses/m4/72e66772b1e088d9b230123a261cae1e86dcecc4
 %make_install
 
 %files
@@ -103,14 +104,16 @@ cp examples/COPYING %{buildroot}/usr/share/package-licenses/m4/examples_COPYING
 %defattr(-,root,root,-)
 /usr/bin/m4
 
-%files doc
+%files info
 %defattr(0644,root,root,0755)
-%doc /usr/share/info/*
+/usr/share/info/m4.info
+/usr/share/info/m4.info-1
+/usr/share/info/m4.info-2
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/m4/COPYING
-/usr/share/package-licenses/m4/examples_COPYING
+/usr/share/package-licenses/m4/72e66772b1e088d9b230123a261cae1e86dcecc4
+/usr/share/package-licenses/m4/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 
 %files man
 %defattr(0644,root,root,0755)
