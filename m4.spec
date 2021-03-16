@@ -6,7 +6,7 @@
 #
 Name     : m4
 Version  : 1.4.18
-Release  : 105
+Release  : 106
 URL      : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source0  : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz
 Source1  : http://mirrors.kernel.org/gnu/m4/m4-1.4.18.tar.xz.sig
@@ -73,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1601605607
+export SOURCE_DATE_EPOCH=1615858295
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -90,7 +90,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1601605607
+export SOURCE_DATE_EPOCH=1615858295
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/m4
 cp %{_builddir}/m4-1.4.18/COPYING %{buildroot}/usr/share/package-licenses/m4/8624bcdae55baeef00cd11d5dfcfa60f68710a02
