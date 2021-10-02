@@ -3,7 +3,6 @@ Configure miss: CFLocaleCopyPreferredLanguages
 Configure miss: Solaris 11.4 locale system
 Configure miss: __freadahead
 Configure miss: _fseeki64
-Configure miss: close_range
 Configure miss: compiler option needed when checking for declarations
 Configure miss: crtdefs.h
 Configure miss: fake locale system (OpenBSD)
