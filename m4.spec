@@ -6,7 +6,7 @@
 #
 Name     : m4
 Version  : 1.4.19
-Release  : 110
+Release  : 111
 URL      : https://mirrors.kernel.org/gnu/m4/m4-1.4.19.tar.xz
 Source0  : https://mirrors.kernel.org/gnu/m4/m4-1.4.19.tar.xz
 Source1  : https://mirrors.kernel.org/gnu/m4/m4-1.4.19.tar.xz.sig
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633198938
+export SOURCE_DATE_EPOCH=1665517893
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -97,11 +97,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1633198938
+export SOURCE_DATE_EPOCH=1665517893
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/m4
-cp %{_builddir}/m4-1.4.19/COPYING %{buildroot}/usr/share/package-licenses/m4/31a3d460bb3c7d98845187c716a30db81c44b615
-cp %{_builddir}/m4-1.4.19/examples/COPYING %{buildroot}/usr/share/package-licenses/m4/72e66772b1e088d9b230123a261cae1e86dcecc4
+cp %{_builddir}/m4-%{version}/COPYING %{buildroot}/usr/share/package-licenses/m4/31a3d460bb3c7d98845187c716a30db81c44b615
+cp %{_builddir}/m4-%{version}/examples/COPYING %{buildroot}/usr/share/package-licenses/m4/72e66772b1e088d9b230123a261cae1e86dcecc4
 %make_install
 %find_lang m4
 
