@@ -1,33 +1,66 @@
 Configure miss: 32-bit host C ABI
+Configure miss: 32-bit host C ABI
+Configure miss: CFLocaleCopyPreferredLanguages
 Configure miss: CFLocaleCopyPreferredLanguages
 Configure miss: Solaris 11.4 locale system
+Configure miss: Solaris 11.4 locale system
+Configure miss: __freadahead
 Configure miss: __freadahead
 Configure miss: _fseeki64
+Configure miss: _fseeki64
+Configure miss: compiler option needed when checking for declarations
 Configure miss: compiler option needed when checking for declarations
 Configure miss: crtdefs.h
+Configure miss: crtdefs.h
+Configure miss: fake locale system (OpenBSD)
 Configure miss: fake locale system (OpenBSD)
 Configure miss: fpurge
+Configure miss: fpurge
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: if changeword is wanted
+Configure miss: if changeword is wanted
+Configure miss: if malloc debugging is wanted
 Configure miss: if malloc debugging is wanted
 Configure miss: ioctl with POSIX signature
+Configure miss: ioctl with POSIX signature
+Configure miss: library needed for semaphore functions
 Configure miss: library needed for semaphore functions
 Configure miss: mbslen
+Configure miss: mbslen
+Configure miss: memset_s
 Configure miss: memset_s
 Configure miss: mquery
+Configure miss: mquery
+Configure miss: obstacks that work with any size object
 Configure miss: obstacks that work with any size object
 Configure miss: posix_spawn_file_actions_addchdir
+Configure miss: posix_spawn_file_actions_addchdir
+Configure miss: pstat_getprocvm
 Configure miss: pstat_getprocvm
 Configure miss: strerror_r with POSIX signature
+Configure miss: strerror_r with POSIX signature
+Configure miss: whether C symbols are prefixed with underscore at the linker level
 Configure miss: whether C symbols are prefixed with underscore at the linker level
 Configure miss: whether fflush works on input streams
+Configure miss: whether fflush works on input streams
+Configure miss: whether fpurge is declared
 Configure miss: whether fpurge is declared
 Configure miss: whether mbrtowc stores incomplete characters
+Configure miss: whether mbrtowc stores incomplete characters
+Configure miss: whether printf supports the 'n' directive
 Configure miss: whether printf supports the 'n' directive
 Configure miss: whether pthread_sigmask is a macro
+Configure miss: whether pthread_sigmask is a macro
+Configure miss: whether the compiler is clang
 Configure miss: whether the compiler is clang
 Configure miss: whether the compiler produces multi-arch binaries
+Configure miss: whether the compiler produces multi-arch binaries
+Configure miss: whether this system supports file names of any length
 Configure miss: whether this system supports file names of any length
 Configure miss: whether to use C++
+Configure miss: whether to use C++
 Configure miss: working nanosleep
+Configure miss: working nanosleep
+Configure miss: working re_compile_pattern
 Configure miss: working re_compile_pattern
