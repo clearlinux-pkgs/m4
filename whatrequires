@@ -4,7 +4,6 @@ bash-completion
 chrpath
 clr-power-tweaks
 compat-fuse-soname2
-dbus-glib
 e2fsprogs
 eid-mw
 fakeroot
@@ -19,18 +18,13 @@ libgsystem
 libindicator
 lightdm
 lsscsi
-man-db
 openct
 pth
 qemu
 qemu-guest-additions
 rrdtool
 rtkit
-shadow
 slurm
-tar
-weechat
 xastir
 xdg-user-dirs
-xscreensaver
 yasm
