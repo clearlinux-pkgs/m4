@@ -4,11 +4,9 @@ bash-completion
 chrpath
 clr-power-tweaks
 compat-fuse-soname2
-e2fsprogs
 eid-mw
 fakeroot
 fcgi
-hplip
 i3lock
 kyotocabinet
 libappindicator
@@ -16,14 +14,11 @@ libev
 libgd
 libgsystem
 libindicator
-lightdm
 lsscsi
 openct
 pth
 qemu
 qemu-guest-additions
-rrdtool
-rtkit
 slurm
 xastir
 xdg-user-dirs
