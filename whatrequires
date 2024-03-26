@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 Judy
-bash-completion
 chrpath
 clr-power-tweaks
 compat-fuse-soname2
@@ -11,7 +10,6 @@ i3lock
 kyotocabinet
 libappindicator
 libev
-libgd
 libgsystem
 libindicator
 lsscsi
