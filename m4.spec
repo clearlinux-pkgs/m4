@@ -9,7 +9,7 @@
 #
 Name     : m4
 Version  : 1.4.19
-Release  : 121
+Release  : 122
 URL      : https://mirrors.kernel.org/gnu/m4/m4-1.4.19.tar.xz
 Source0  : https://mirrors.kernel.org/gnu/m4/m4-1.4.19.tar.xz
 Source1  : https://mirrors.kernel.org/gnu/m4/m4-1.4.19.tar.xz.sig
