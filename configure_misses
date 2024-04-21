@@ -28,8 +28,7 @@ Configure miss: fpurge
 Configure miss: fpurge
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
-Configure miss: gcc-14 option to enable C11 features
-Configure miss: gcc-14 options needed to detect all undeclared functions
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: if changeword is wanted
 Configure miss: if changeword is wanted
 Configure miss: if changeword is wanted
