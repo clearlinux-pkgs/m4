@@ -4,14 +4,13 @@ chrpath
 clr-power-tweaks
 compat-fuse-soname2
 eid-mw
-fakeroot
 fcgi
 i3lock
-kyotocabinet
 libappindicator
 libev
 libgsystem
 libindicator
+libuser
 lsscsi
 openct
 pth
